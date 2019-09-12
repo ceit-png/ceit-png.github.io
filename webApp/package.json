@@ -1,0 +1,23 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "website for ceit png",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-uglify": "latest",
+    "gulp-file-include":"latest",
+    "run-sequence": "latest"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}
