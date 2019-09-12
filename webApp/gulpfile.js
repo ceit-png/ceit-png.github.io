@@ -17,7 +17,7 @@ gulp.task('styles', function () {
     // Minify the file
     .pipe(csso())
     // Output
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('../css'))
 });
 
 
@@ -27,7 +27,7 @@ gulp.task('scripts', function() {
       // Minify the file
       .pipe(uglify())
       // Output
-      .pipe(gulp.dest('./dist/js'))
+      .pipe(gulp.dest('../js'))
   });
 
 
@@ -42,19 +42,19 @@ gulp.task('pages', function() {
         collapseWhitespace: true,
         removeComments: true
       }))
-      .pipe(gulp.dest('./dist'));
+      .pipe(gulp.dest('../'));
   });
 
     // Gulp task to minify HTML files
 gulp.task('images', function() {
   return gulp.src('src/images/*')
   .pipe(imagemin())
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('../images'))
 });
 
 
   // Clean output directory
-gulp.task('clean', () => del(['dist']));
+gulp.task('clean', () => del(['../js','../css','../images','index.html']));
 
 
 // Gulp task to minify all files
