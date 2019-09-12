@@ -54,7 +54,7 @@ gulp.task('images', function() {
 
 
   // Clean output directory
-gulp.task('clean', () => del(['../js','../css','../images','index.html']));
+gulp.task('clean', () => del(['../js','../css','../images','index.html'],{force: true}));
 
 
 // Gulp task to minify all files
