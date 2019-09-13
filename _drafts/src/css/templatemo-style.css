@@ -387,11 +387,19 @@ http://www.templatemo.com/tm-516-known
   }
 
   .home-slider .item-second {
-    background-image: url(../images/home_centre2.JPG);
+    background-image: url(../images/home_officials2.jpg);
   }
 
   .home-slider .item-third {
-    background-image: url(../images/slider-image3.jpg);
+    background-image: url(../images/home_officials1.JPG);
+  }
+
+  .home-slider .item-fourth {
+    background-image: url(../images/home_centre2.JPG);
+  }
+
+  .home-slider .item-fifth {
+    background-image: url(../images/home_officials3.JPG);
   }
 
 
