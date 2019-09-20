@@ -49,10 +49,11 @@ http://www.templatemo.com/tm-516-known
   }
 
   p {
-    color: #757575;
+    color: #212121;
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
+    text-align: justify;
   }
 
 
@@ -658,6 +659,7 @@ http://www.templatemo.com/tm-516-known
     margin: 20px 0;
     padding: 4em 3em;
     text-align: left;
+    height: 450px;
   }
 
   #courses .col-md-4,
