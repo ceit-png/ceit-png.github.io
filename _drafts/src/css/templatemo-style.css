@@ -160,7 +160,7 @@ http://www.templatemo.com/tm-516-known
 
   section {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
   }
 
   #team,
@@ -201,7 +201,20 @@ http://www.templatemo.com/tm-516-known
     border-color: transparent;
   }
 
+  .modalview-btn {
+    background: #64b5f6;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: inherit;
+    font-weight: normal;
+    transition: 0.5s;
+  }
 
+  .modalview-btn:hover {
+    background: #80cbc4;
+    border-color: transparent;
+  }
 
   /*---------------------------------------
        PRE LOADER              
