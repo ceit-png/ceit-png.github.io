@@ -54,8 +54,8 @@ gulp.task('images', function() {
 
 
   // Clean output directory
-gulp.task('clean', () => del(['../js','../css','index.html'],{force: true}));
-
+gulp.task('clean', () => del(['../js','../css','../images','index.html'],{force: true}));
+// gulp.task('clean', () => del(['../js','../css','index.html'],{force: true}));
 
 // Gulp task to minify all files
 gulp.task('default', ['clean'], function () {
@@ -63,6 +63,6 @@ gulp.task('default', ['clean'], function () {
       'styles',
       'scripts',
       'pages',
-   //   'images'
+      'images'
     );
   });
