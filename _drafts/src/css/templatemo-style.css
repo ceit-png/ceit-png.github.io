@@ -286,10 +286,10 @@ http://www.templatemo.com/tm-516-known
     color: #454545;
     font-size: 18px;
     font-weight: bold;
-    line-height: 40px;
+    /* line-height: 40px; */ 
   }
 
-  .custom-navbar .navbar-nav.navbar-nav-first {
+  .custom-navbar-NULL .navbar-nav.navbar-nav-first {
     margin-left: 8em;
   }
 
@@ -313,9 +313,9 @@ http://www.templatemo.com/tm-516-known
   .custom-navbar .nav li a {
     line-height: 40px;
     color: #575757;
-    padding-right: 22px;
-    padding-left: 22px;
-  }
+   /* padding-right: 22px;
+    padding-left: 22px; */ 
+ }
 
   .custom-navbar .navbar-nav > li > a:hover,
   .custom-navbar .navbar-nav > li > a:focus {
