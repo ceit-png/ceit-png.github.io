@@ -48,6 +48,19 @@ gulp.task('pages', function() {
       .pipe(gulp.dest('./dest/'));
   });
 
+
+    // Gulp task to minify HTML files
+gulp.task('slidepage', function() {
+  return gulp.src(['./src/slideshow.html'])
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('../'))
+    .pipe(gulp.dest('./dest/'));
+});
+
+
     // Gulp task to minify HTML files
 gulp.task('images', function() {
   return gulp.src('src/images/*')
@@ -58,10 +71,10 @@ gulp.task('images', function() {
 
 
   // Clean output directory
-// gulp.task('clean', () => del(['../js','../css','../images','index.html'],{force: true}));
+// gulp.task('clean', () => del(['../js','../css','../images','index.html','slideshow.html'],{force: true}));
 
- gulp.task('clean-dest', () => del(['./dest/js','./dest/css','./dest/images','index.html'],{force: true}));
- gulp.task('clean', () => del(['../js','../css','index.html'],{force: true}));
+ gulp.task('clean-dest', () => del(['./dest/js','./dest/css','./dest/images','index.html','slideshow.html'],{force: true}));
+ gulp.task('clean', () => del(['../js','../css','index.html','slideshow.html'],{force: true}));
 
 // Gulp task to minify all files
 gulp.task('default', ['clean'], function () {
@@ -69,6 +82,7 @@ gulp.task('default', ['clean'], function () {
       'styles',
       'scripts',
       'pages',
+      'slidepage',
    //   'images'
     );
   });
