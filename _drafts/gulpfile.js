@@ -23,54 +23,66 @@ gulp.task('styles', function () {
 
 
 // Gulp task to minify JavaScript files
-gulp.task('scripts', function() {
-    return gulp.src('./src/js/*.js')
-      // Minify the file
-      .pipe(uglify())
-      // Output
-      .pipe(gulp.dest('../js'))
-      .pipe(gulp.dest('./dest/js'))
-  });
-
-
-
-  // Gulp task to minify HTML files
-gulp.task('pages', function() {
-    return gulp.src(['./src/index.html'])
-    .pipe(fileinclude({
-
-      }))
-      .pipe(htmlmin({
-        collapseWhitespace: true,
-        removeComments: true
-      }))
-      .pipe(gulp.dest('../'))
-      .pipe(gulp.dest('./dest/'));
-  });
-
-
-
-    // Gulp task to minify HTML files
-gulp.task('images', function() {
-  return gulp.src('src/images/*')
-  .pipe(imagemin())
-  .pipe(gulp.dest('../images'))
-  .pipe(gulp.dest('./dest/images'))
+gulp.task('scripts', function () {
+  return gulp.src('./src/js/*.js')
+    // Minify the file
+    .pipe(uglify())
+    // Output
+    .pipe(gulp.dest('../js'))
+    .pipe(gulp.dest('./dest/js'))
 });
 
 
-  // Clean output directory
-// gulp.task('clean', () => del(['../js','../css','../images','index.html'],{force: true}));
 
- gulp.task('clean-dest', () => del(['./dest/js','./dest/css','./dest/images','index.html'],{force: true}));
- gulp.task('clean', () => del(['../js','../css','index.html'],{force: true}));
+// Gulp task to minify HTML files
+gulp.task('pages', function () {
+  return gulp.src(['./src/index.html'])
+    .pipe(fileinclude({
+
+    }))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('../'))
+    .pipe(gulp.dest('./dest/'));
+});
+
+
+// Gulp task to minify HTML files
+gulp.task('schedule-page', function () {
+  return gulp.src(['./src/schedule.html'])
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('../'))
+    .pipe(gulp.dest('./dest/'));
+});
+
+
+// Gulp task to minify HTML files
+gulp.task('images', function () {
+  return gulp.src('src/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('../images'))
+    .pipe(gulp.dest('./dest/images'))
+});
+
+
+// Clean output directory
+// gulp.task('clean', () => del(['../js','../css','../images','index.html','schedule.html'],{force: true}));
+
+gulp.task('clean-dest', () => del(['./dest/js', './dest/css', './dest/images', 'index.html', 'schedule.html'], { force: true }));
+gulp.task('clean', () => del(['../js', '../css', 'index.html', 'schedule.html'], { force: true }));
 
 // Gulp task to minify all files
 gulp.task('default', ['clean'], function () {
-    runSequence(
-      'styles',
-      'scripts',
-      'pages',
-   //   'images'
-    );
-  });
+  runSequence(
+    'styles',
+    'scripts',
+    'pages',
+    'schedule-page',
+    'images'
+  );
+});
