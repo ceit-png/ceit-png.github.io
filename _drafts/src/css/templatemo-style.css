@@ -530,7 +530,7 @@ http://www.templatemo.com/tm-516-known
     text-align: center;
     padding: 0;
   }
-
+/*
   #dcourses .section-title {
     text-align: center;
   }
@@ -540,6 +540,25 @@ http://www.templatemo.com/tm-516-known
   }
 
   #dcourses .owl-theme .owl-nav [class*=owl-] {
+    border-radius: 2px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+  }
+
+*/
+  #c_courses .section-title {
+    text-align: center;
+  }
+
+  #c_courses .owl-theme .owl-nav {
+    margin-top: 30px;
+  }
+
+  #c_courses .owl-theme .owl-nav [class*=owl-] {
     border-radius: 2px;
     font-size: 16px;
     width: 30px;
