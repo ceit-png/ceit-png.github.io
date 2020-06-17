@@ -83,6 +83,6 @@ gulp.task('default', ['clean'], function () {
     'scripts',
     'pages',
     'schedule-page',
-   // 'images'
+    //'images'
   );
 });
