@@ -396,20 +396,20 @@ http://www.templatemo.com/tm-516-known
   .caption h3 a:hover { color: #FF3; }
 
   .home-slider .item-first {
-    background-image: url(../images/home_centre2.jpg); 
+    background-image: url(../images/home_centre3.jpg); 
 	background-position: center;
   }
 
   .home-slider .item-second {
-    background-image: url(../images/home_officials2.jpg);
+    background-image: url(../images/home_centre4.jpg);
   }
 
   .home-slider .item-third {
-    background-image: url(../images/home_officials1.jpg);
+    background-image: url(../images/home_centre5.jpg);
   }
   
   .home-slider .item-fourth {
-    background-image: url(../images/home_officials3.jpg);
+    background-image: url(../images/home_centre2.jpg);
   }
 
 
