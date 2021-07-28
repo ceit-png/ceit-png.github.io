@@ -235,6 +235,28 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*---------------------------------------
+     Header
+  -----------------------------------------*/
+
+.jumbotron
+{
+padding: 8px;
+background: #7D62FF;
+background: -webkit-radial-gradient(left, #7D62FF, #082021);
+background: -moz-radial-gradient(left, #7D62FF, #082021);
+background: radial-gradient(to right, #7D62FF, #082021);
+}
+.col-sm-3 .ceit-logo{
+  width: 90px;
+  height: 90px;
+}
+
+.col-sm-3 .upng-logo{
+  width: 90px;
+  height: 90px;
+}
 /*---------------------------------------
       MENU
   -----------------------------------------*/
